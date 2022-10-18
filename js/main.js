@@ -1,5 +1,6 @@
-//Example fetch using pokemonapi.co
-document.querySelector('button').addEventListener('click', getFetch)
+document.querySelector('#button1').addEventListener('click', getFetch)
+document.querySelector('#button2').addEventListener('click', battle)
+
 
 const poke1Obj = {}
 const poke2Obj = {}
@@ -44,4 +45,8 @@ function getFetch(){
             poke2Obj.specialDefense = document.querySelector("#specialDefense2").innerText = data.stats[4].base_stat
             poke2Obj.speed = document.querySelector("#speed2").innerText = data.stats[5].base_stat
         })     
+}
+
+function battle() {
+    
 }
